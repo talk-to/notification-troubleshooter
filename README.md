@@ -1,9 +1,6 @@
 # NotificationTroubleshooter
 
-[![CI Status](https://img.shields.io/travis/Aditya Ghosh/NotificationTroubleshooter.svg?style=flat)](https://travis-ci.org/Aditya Ghosh/NotificationTroubleshooter)
-[![Version](https://img.shields.io/cocoapods/v/NotificationTroubleshooter.svg?style=flat)](https://cocoapods.org/pods/NotificationTroubleshooter)
-[![License](https://img.shields.io/cocoapods/l/NotificationTroubleshooter.svg?style=flat)](https://cocoapods.org/pods/NotificationTroubleshooter)
-[![Platform](https://img.shields.io/cocoapods/p/NotificationTroubleshooter.svg?style=flat)](https://cocoapods.org/pods/NotificationTroubleshooter)
+Push notification troubleshooter for iOS
 
 ## Example
 
