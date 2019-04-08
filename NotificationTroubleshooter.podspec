@@ -1,10 +1,11 @@
 Pod::Spec.new do |s|
   s.name             = 'NotificationTroubleshooter'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of NotificationTroubleshooter.'
+  s.summary          = 'Cocoapod to troubleshoot push notifications in iOS.'
 
   s.description      = <<-DESC
-Cocoapod to troubleshoot push notifications in iOS
+Cocoapod to troubleshoot push notifications in iOS and if there are any syncing issues
+with the server, it corrects it.
                        DESC
 
   s.homepage         = 'https://github.com/talk-to/notification-troubleshooter'
