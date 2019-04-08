@@ -12,9 +12,8 @@ with the server, it corrects it.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Aditya Ghosh' => 'adityaghosh96@gmail.com' }
   s.source           = { :git => 'https://github.com/talk-to/notification-troubleshooter.git', :tag => s.version.to_s }
-
-  s.ios.deployment_target = '11.0'
   s.swift_version = '4.0'
+  s.ios.deployment_target = '11.0'
   s.source_files = 'NotificationTroubleshooter/Classes/**/*'
   
   s.resource_bundles = {

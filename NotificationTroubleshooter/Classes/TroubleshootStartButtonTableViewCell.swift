@@ -15,7 +15,7 @@ class TroubleshootStartButtonTableViewCell: UITableViewCell {
   func resetButton(isTroubleshooting: Bool) {
     self.startTroubleshooting.setTitle(NSLocalizedString("Start troubleshooting", comment: "On clicking this button, troubleshooting starts"), for: .normal)
     self.startTroubleshooting.isUserInteractionEnabled = !isTroubleshooting
-    self.startTroubleshooting.backgroundColor = UIColor(red: 33.rgb, green: 112.rgb, blue: 244.rgb, alpha: isTroubleshooting ? 0.5 : 1.0)
+    self.startTroubleshooting.backgroundColor = UIColor(red: 33/255.0, green: 112/255.0, blue: 244/255.0, alpha: isTroubleshooting ? 0.5 : 1.0)
   }
 
 }

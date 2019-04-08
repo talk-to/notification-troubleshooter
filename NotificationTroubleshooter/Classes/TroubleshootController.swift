@@ -42,7 +42,7 @@ public class TroubleshootController: UIViewController, NotificationTroubleshoote
   }
   
   @IBAction func runTestButtonClicked(_ sender: UIButton) {
-    sender.backgroundColor = UIColor(red: 33.rgb, green: 112.rgb, blue: 244.rgb, alpha: 0.5)
+    sender.backgroundColor = UIColor(red: 33/255.0, green: 112/255.0, blue: 244/255.0, alpha: 0.5)
     sender.isUserInteractionEnabled = false
     isStepsVisible = true
     isTroubleshooting = true
@@ -211,8 +211,8 @@ extension TroubleshootController: UITableViewDataSource, UITableViewDelegate {
 
   public func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
     if section == 1 {
-      (view as! UITableViewHeaderFooterView).backgroundView?.backgroundColor = UIColor(red: 255.rgb, green: 255.rgb, blue: 255.rgb, alpha: 1.0)
-      (view as! UITableViewHeaderFooterView).textLabel?.textColor = UIColor(red: 136.rgb, green: 136.rgb, blue: 136.rgb, alpha: 1.0)
+      (view as! UITableViewHeaderFooterView).backgroundView?.backgroundColor = UIColor(red: 255/255.0, green: 255/255.0, blue: 255/255.0, alpha: 1.0)
+      (view as! UITableViewHeaderFooterView).textLabel?.textColor = UIColor(red: 136/255.0, green: 136/255.0, blue: 136/255.0, alpha: 1.0)
     }
   }
   
@@ -237,18 +237,4 @@ extension TroubleshootController: UITableViewDataSource, UITableViewDelegate {
     }
   }
   
-}
-
-extension Int {
-  /**
-   Returns a CGFloat *ranging from 0-1* value that can be used while creating a UIColor from Red, Green and Blue.
-   - Example:
-   This example shows how to use rgb extension on Int for color *(31,32,53)*
-   ```
-   let color = UIColor(red: 31.rgb, green: 32.rgb, blue: 53.rgb, alpha: 1)
-   ```
-   */
-  public var rgb: CGFloat {
-    return CGFloat(Double(self)/255.0)
-  }
 }
