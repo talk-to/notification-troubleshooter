@@ -26,7 +26,7 @@ public class TroubleshootController: UIViewController, NotificationTroubleshoote
   private var steps: [String] = ["User Settings",
                                  "Device Token from iOS",
                                  "Send token to Server End",
-                                 "Request for dummy notification",
+                                 "Request for Dummy Notification",
                                  "Waiting for Dummy Notification"]
   private var showSuccess: [Bool] = []
   private var showFailure: [Bool] = []
