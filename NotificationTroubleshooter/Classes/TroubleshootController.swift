@@ -26,7 +26,7 @@ public class TroubleshootController: UIViewController, NotificationTroubleshoote
   private var steps: [String] = [NSLocalizedString("User Settings", comment: "User Settings"),
                                  NSLocalizedString("Device Token from iOS", comment: "Device Token from iOS"),
                                  NSLocalizedString("Send token to Server End", comment: "Send token to Server End"),
-                                 NSLocalizedString("Request for Dummy notification", comment: "Request for Dummy notification"),
+                                 NSLocalizedString("Request for Dummy Notification", comment: "Request for Dummy Notification"),
                                  NSLocalizedString("Waiting for Dummy Notification", comment: "Waiting for Dummy Notification")]
   private var showSuccess: [Bool] = []
   private var showFailure: [Bool] = []
