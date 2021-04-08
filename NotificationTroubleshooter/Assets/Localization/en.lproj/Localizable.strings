@@ -1,0 +1,182 @@
+﻿/* Default Event Title
+   Title for empty events */
+"(No Title)" = "(No Title)";
+
+/* accepted */
+"accepted" = "accepted";
+
+/* Title for add button in event creation */
+"Add" = "Add";
+
+/* Section title for additional settings in event creation */
+"ADDITIONAL SETTINGS" = "ADDITIONAL SETTINGS";
+
+/* After Occurence title */
+"After Occurence" = "After Occurence";
+
+/* Repeat After Occurences */
+"After Occurences" = "After Occurences";
+
+/* Title for all day cell in event creation */
+"All Day" = "All Day";
+
+/* No comment provided by engineer. */
+"All Events" = "All Events";
+
+/* All events Title */
+"All events" = "All events";
+
+/* And used to join items like 'a, b and c' */
+"and" = "and";
+
+/* Are you sure you want to delete this event */
+"Are you sure you want to delete this event?" = "Are you sure you want to delete this event?";
+
+/* Cancel
+   Cancel action
+   DeleteCancelTitle */
+"Cancel" = "Cancel";
+
+/* RSVP confirmed title */
+"confirmed" = "confirmed";
+
+/* Title for event custom repeat behaviour */
+"Custom" = "Custom";
+
+/* Day title in repeat picker */
+"Day" = "Day";
+
+/* Delete */
+"Delete" = "Delete";
+
+/* Placeholder for event creation description */
+"Description" = "Description";
+
+/* No comment provided by engineer. */
+"Does Not Repeat" = "Does Not Repeat";
+
+/* Title for done button in event creation */
+"Done" = "Done";
+
+/* Edit Event Title */
+"Edit" = "Edit";
+
+/* Title for event edit screen */
+"Edit Event" = "Edit Event";
+
+/* Title for end time in event creation */
+"End" = "End";
+
+/* Ends on a Date title */
+"Ends on a Date" = "Ends on a Date";
+
+/* No comment provided by engineer. */
+"Event Details" = "Event Details";
+
+/* Event recurring every day on some day */
+"every month on the" = "every month on the";
+
+/* Title to show for guest access options */
+"Guest Access" = "Guest Access";
+
+/* Guest */
+"Guest count" = "Guest count";
+
+/* Invite Guests Access */
+"Invite Guests" = "Invite Guests";
+
+/* marked pending */
+"marked pending" = "marked pending";
+
+/* No comment provided by engineer. */
+"Marking Your Response" = "Marking Your Response";
+
+/* RSVP maybe title */
+"maybe" = "maybe";
+
+/* Self attendee title */
+"Me" = "Me";
+
+/* Shorthand for minutes */
+"mins" = "mins";
+
+/* Modify event access */
+"Modify Event" = "Modify Event";
+
+/* Month title in repeat picker */
+"Month" = "Month";
+
+/* Never ending title
+   Repeat Never */
+"Never" = "Never";
+
+/* Title for event creation screen */
+"New Event" = "New Event";
+
+/* Delete Event No Title */
+"No" = "No";
+
+/* RSVP not going title */
+"not going" = "not going";
+
+/* No comment provided by engineer. */
+"Nothing planned for this day" = "Nothing planned for this day";
+
+/* No comment provided by engineer. */
+"Nothing planned for today" = "Nothing planned for today";
+
+/* Repeat On a date */
+"On a date" = "On a date";
+
+/* RSVP pending title */
+"pending" = "pending";
+
+/* rejected */
+"rejected" = "rejected";
+
+/* Repeat cell title
+   Repeat Screen title */
+"Repeat" = "Repeat";
+
+/* No comment provided by engineer. */
+"Repeats Daily" = "Repeats Daily";
+
+/* See Guests Access */
+"See Guests" = "See Guests";
+
+/* Description when no calendar is selected */
+"Select a calendar to see your schedule" = "Select a calendar to see your schedule";
+
+/* Title for start time in event creation */
+"Start" = "Start";
+
+/* tentatively accepted */
+"tentatively accepted" = "tentatively accepted";
+
+/* This and following events title */
+"This and following events" = "This and following events";
+
+/* No comment provided by engineer. */
+"This Event" = "This Event";
+
+/* This event Title */
+"This event" = "This event";
+
+/* Week title in repeat picker */
+"Week" = "Week";
+
+/* Section title for when section in event creation */
+"WHEN" = "WHEN";
+
+/* Section title for where section in event creation */
+"WHERE" = "WHERE";
+
+/* Section title for who section in event creation */
+"WHO" = "WHO";
+
+/* Year title in repeat picker */
+"Year" = "Year";
+
+/* Delete Event Yes Title */
+"Yes" = "Yes";
+

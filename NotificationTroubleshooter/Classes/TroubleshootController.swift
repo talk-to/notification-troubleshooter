@@ -23,11 +23,11 @@ public class TroubleshootController: UIViewController, NotificationTroubleshoote
   @IBOutlet weak var tableView: UITableView!
   private var isStepsVisible: Bool = false
   private var isTroubleshooting: Bool = false
-  private var steps: [String] = ["User Settings",
-                                 "Device Token from iOS",
-                                 "Send token to Server End",
-                                 "Request for dummy notification",
-                                 "Waiting for Dummy Notification"]
+  private var steps: [String] = [NSLocalizedString("User Settings", comment: "User Settings"),
+                                 NSLocalizedString("Device Token from iOS", comment: "Device Token from iOS"),
+                                 NSLocalizedString("Send token to Server End", comment: "Send token to Server End"),
+                                 NSLocalizedString("Request for Dummy Notification", comment: "Request for Dummy Notification"),
+                                 NSLocalizedString("Waiting for Dummy Notification", comment: "Waiting for Dummy Notification")]
   private var showSuccess: [Bool] = []
   private var showFailure: [Bool] = []
   private var hideSpinner: [Bool] = []

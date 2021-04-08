@@ -1,0 +1,12 @@
+
+/* Class = "UINavigationItem"; title = "Troubleshoot Notifications"; ObjectID = "Bcp-gp-Fb1"; */
+"Bcp-gp-Fb1.title" = "Troubleshoot Notifications";
+
+/* Class = "UIButton"; normalTitle = "Start troubleshooting"; ObjectID = "PgB-Zf-R7E"; */
+"PgB-Zf-R7E.normalTitle" = "Start troubleshooting";
+
+/* Class = "UILabel"; text = "Facing issues with notifications ?"; ObjectID = "QRL-dH-RqG"; */
+"QRL-dH-RqG.text" = "Facing issues with notifications ?";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "YLV-Gj-rVx"; */
+"YLV-Gj-rVx.text" = "Label";
