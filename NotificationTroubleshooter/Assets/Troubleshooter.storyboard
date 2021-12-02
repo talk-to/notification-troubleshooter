@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_5" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,22 +19,22 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VF7-tK-RCX">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="BGColor"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="ag0-Nu-pHz">
-                                    <rect key="frame" x="0.0" y="229" width="414" height="1"/>
+                                    <rect key="frame" x="0.0" y="257" width="414" height="1"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" name="BGColor"/>
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="TroubleshootStepsCell" rowHeight="48" id="OWC-44-Uxs" customClass="TroubleshootTableViewCell" customModule="NotificationTroubleshooter" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="48"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OWC-44-Uxs" id="aDj-3P-oTU">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="47.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="48"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLV-Gj-rVx">
-                                                    <rect key="frame" x="19.999999999999996" y="15" width="41.666666666666657" height="18"/>
+                                                    <rect key="frame" x="20.000000000000004" y="15" width="41.333333333333343" height="18"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="18" id="cer-mP-igm"/>
                                                     </constraints>
@@ -44,7 +43,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fFf-X5-R2W">
-                                                    <rect key="frame" x="330" y="0.0" width="68" height="47.666666666666664"/>
+                                                    <rect key="frame" x="330" y="0.0" width="68" height="48"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="going-active" translatesAutoresizingMaskIntoConstraints="NO" id="oqc-xD-Utn">
                                                             <rect key="frame" x="0.0" y="12" width="24" height="24"/>
@@ -58,6 +57,7 @@
                                                     </subviews>
                                                 </stackView>
                                             </subviews>
+                                            <color key="backgroundColor" name="BGColor"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="fFf-X5-R2W" secondAttribute="trailing" constant="16" id="5D2-6r-ltQ"/>
                                                 <constraint firstAttribute="bottom" secondItem="fFf-X5-R2W" secondAttribute="bottom" id="jLF-tv-iwB"/>
@@ -76,12 +76,12 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="TroubleshootStartButtonCell" rowHeight="153" id="SDU-88-iTH" customClass="TroubleshootStartButtonTableViewCell" customModule="NotificationTroubleshooter" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="76" width="414" height="153"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SDU-88-iTH" id="SbI-d8-Ftt">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="152.66666666666666"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SDU-88-iTH" id="SbI-d8-Ftt">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="153"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PgB-Zf-R7E">
-                                                    <rect key="frame" x="116" y="58" width="182" height="40"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PgB-Zf-R7E">
+                                                    <rect key="frame" x="116" y="58" width="182" height="51"/>
                                                     <color key="backgroundColor" red="0.12941176470588234" green="0.4392156862745098" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="xKa-aQ-LdI"/>
@@ -102,15 +102,16 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Facing issues with notifications ?" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRL-dH-RqG">
-                                                    <rect key="frame" x="94.666666666666686" y="24" width="225" height="18"/>
+                                                    <rect key="frame" x="95.000000000000014" y="24" width="224.33333333333337" height="18"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="18" id="pkm-Yt-WqK"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" name="SecondaryTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" name="BGColor"/>
                                             <constraints>
                                                 <constraint firstItem="QRL-dH-RqG" firstAttribute="top" secondItem="SbI-d8-Ftt" secondAttribute="top" constant="24" id="H6d-GI-Xm5"/>
                                                 <constraint firstAttribute="bottom" secondItem="PgB-Zf-R7E" secondAttribute="bottom" constant="44" id="Ou7-qq-zUD"/>
@@ -130,14 +131,14 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Zwj-ru-uZp"/>
+                        <color key="backgroundColor" name="BGColor"/>
                         <constraints>
                             <constraint firstItem="VF7-tK-RCX" firstAttribute="leading" secondItem="Zwj-ru-uZp" secondAttribute="leading" id="MqM-36-CPc"/>
                             <constraint firstItem="Zwj-ru-uZp" firstAttribute="trailing" secondItem="VF7-tK-RCX" secondAttribute="trailing" id="QDN-d0-uBD"/>
                             <constraint firstItem="VF7-tK-RCX" firstAttribute="top" secondItem="Zwj-ru-uZp" secondAttribute="top" id="fvo-fY-Vmb"/>
                             <constraint firstItem="Zwj-ru-uZp" firstAttribute="bottom" secondItem="VF7-tK-RCX" secondAttribute="bottom" id="rEc-gB-n9p"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Zwj-ru-uZp"/>
                     </view>
                     <navigationItem key="navigationItem" title="Troubleshoot Notifications" id="Bcp-gp-Fb1">
                         <barButtonItem key="leftBarButtonItem" systemItem="done" id="yp3-x9-22O">
@@ -176,5 +177,11 @@
     <resources>
         <image name="going-active" width="24" height="24"/>
         <image name="troubleshoot-wrong" width="24" height="24"/>
+        <namedColor name="BGColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SecondaryTextColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
