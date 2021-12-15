@@ -10,7 +10,7 @@ with the server, it corrects it.
 
   s.homepage         = 'https://github.com/talk-to/notification-troubleshooter'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Aditya Ghosh' => 'adityaghosh96@gmail.com' }
+  s.author           = { 'Aditya Ghosh' => 'adityaghosh96@gmail.com', 'Ajay Mann' => 'ajaymann7@gmail.com' }
   s.source           = { :git => 'https://github.com/talk-to/notification-troubleshooter.git', :tag => s.version.to_s }
   s.swift_version = '4.0'
   s.ios.deployment_target = '11.0'
