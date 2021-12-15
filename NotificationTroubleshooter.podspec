@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'NotificationTroubleshooter'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'Cocoapod to troubleshoot push notifications in iOS.'
 
   s.description      = <<-DESC
