@@ -14,8 +14,8 @@ public protocol NotificationTroubleshooterDataSource: class {
   func willStartTroubleShooting()
   func isSettingsAuthorized(completionBlockHandler: @escaping (UNAuthorizationStatus) -> Void)
   func didReceivePushToken(completionBlockHandler: @escaping (String?, Error?) -> Void)
-  func syncWithServer(using token: String, completionBlockHandler: @escaping (Bool, Int64) -> Void)
-  func sendDummyNotificationRequest(aId: Int64, completionBlockHandler: @escaping (Bool) -> Void)
+  func syncWithServer(using token: String, completionBlockHandler: @escaping (Bool) -> Void)
+  func sendDummyNotificationRequest(completionBlockHandler: @escaping (Bool) -> Void)
   func didReceiveDummyNotification(completionBlockHandler: @escaping (Bool) -> Void)
   func didEndTroubleShooting()
 }
@@ -39,7 +39,6 @@ public class TroubleshootModel: TroubleshootModelActions {
 
   private var notificationTimeOutInSeconds = 30.0
   private var token: String?
-  private var aId: Int64?
   private var timer: Timer?
   public weak var dataSource: NotificationTroubleshooterDataSource?
   public weak var delegate: NotificationTroubleshooterDelegate?
@@ -81,9 +80,8 @@ public class TroubleshootModel: TroubleshootModelActions {
   public func initiateSyncWithServer() {
     delegate?.willInitiateSyncWithServer()
     guard let token = self.token else { return }
-    dataSource?.syncWithServer(using: token) { [weak self] status, aId in
+    dataSource?.syncWithServer(using: token) { [weak self] status in
       guard let self = self else { return }
-      self.aId = aId
       DispatchQueue.main.async {
         self.delegate?.didFinishSyncWithServer(withResult: status)
       }
@@ -99,7 +97,7 @@ public class TroubleshootModel: TroubleshootModelActions {
   
   public func initiateDummyNotificationsRequest() {
     delegate?.willInitiateDummyNotificationsRequest()
-    dataSource?.sendDummyNotificationRequest(aId: aId!) { [weak self] notificationStatus in
+    dataSource?.sendDummyNotificationRequest() { [weak self] notificationStatus in
       guard let self = self else { return }
       DispatchQueue.main.async {
         self.delegate?.didFinishDummyNotificationsRequest(withResult: notificationStatus)
