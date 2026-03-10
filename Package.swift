@@ -10,7 +10,8 @@ let package = Package(
   targets: [
     .target(
       name: "NotificationTroubleshooter",
-      path: "NotificationTroubleshooter/Classes",
+      path: "NotificationTroubleshooter",
+      sources: ["Classes"],
       resources: [
         .process("Assets"),
       ]
