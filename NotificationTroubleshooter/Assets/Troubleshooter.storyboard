@@ -26,7 +26,7 @@
                                     <color key="backgroundColor" name="BGColor"/>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="TroubleshootStepsCell" rowHeight="48" id="OWC-44-Uxs" customClass="TroubleshootTableViewCell" customModule="NotificationTroubleshooter" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="TroubleshootStepsCell" rowHeight="48" id="OWC-44-Uxs" customClass="TroubleshootTableViewCell" customModule="NotificationTroubleshooter">
                                         <rect key="frame" x="0.0" y="28" width="414" height="48"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OWC-44-Uxs" id="aDj-3P-oTU">
@@ -73,7 +73,7 @@
                                             <outlet property="spinner" destination="9Qg-6f-Wsc" id="qsW-wm-nIj"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="TroubleshootStartButtonCell" rowHeight="153" id="SDU-88-iTH" customClass="TroubleshootStartButtonTableViewCell" customModule="NotificationTroubleshooter" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="TroubleshootStartButtonCell" rowHeight="153" id="SDU-88-iTH" customClass="TroubleshootStartButtonTableViewCell" customModule="NotificationTroubleshooter">
                                         <rect key="frame" x="0.0" y="76" width="414" height="153"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SDU-88-iTH" id="SbI-d8-Ftt">
