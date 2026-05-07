@@ -180,7 +180,7 @@ extension TroubleshootController: UITableViewDataSource, UITableViewDelegate {
 
   public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     if indexPath.section == 0 {
-      return UITableViewAutomaticDimension
+      return UITableView.automaticDimension
     }
     return 48.0
   }
@@ -224,10 +224,9 @@ extension TroubleshootController: UITableViewDataSource, UITableViewDelegate {
       let showFailureForCell = showFailure[indexPath.row]
       let hideSpinnerForCell = hideSpinner[indexPath.row]
       let cell = tableView.dequeueReusableCell(withIdentifier: "TroubleshootStepsCell") as! TroubleshootTableViewCell
-      let imageBundlePath = Bundle(for: TroubleshootController.self).path(forResource: "NotificationTroubleshooter", ofType: "bundle")!
       cell.configure(text: text,
-                     imageSuccess: (showSuccessForCell ? UIImage(named: "going-active", in: Bundle(path: imageBundlePath), compatibleWith: nil): nil),
-                     imageFailure: (showFailureForCell ? UIImage(named: "troubleshoot-wrong", in: Bundle(path: imageBundlePath), compatibleWith: nil): nil),
+                     imageSuccess: (showSuccessForCell ? UIImage(named: "going-active", in: .module, compatibleWith: nil): nil),
+                     imageFailure: (showFailureForCell ? UIImage(named: "troubleshoot-wrong", in: .module, compatibleWith: nil): nil),
                      hideSpinnerStatus: hideSpinnerForCell)
       return cell
     } else {
